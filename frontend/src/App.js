@@ -29,6 +29,7 @@ function App() {
   return (
     <div>
       <button
+        className='font-bold underline'
         onClick={() => {
           activate(CoinbaseWallet);
         }}

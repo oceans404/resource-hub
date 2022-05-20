@@ -3,9 +3,10 @@
 ### Technology used
 
 - Frontend: Bootstrapped with Create-React-App
-- Wallet connection mechanisms: Coinbase Wallet, Wallet Connect, and MetaMask
-- Network: Polgyon Mumbai
-- RPC: Figment
+- CSS Framework: [Tailwind CSS](https://tailwindcss.com/)
+- Wallet connection mechanisms: [Coinbase Wallet](https://www.coinbase.com/wallet/developers), [Wallet Connect](https://walletconnect.com/), and [MetaMask Wallet](https://docs.metamask.io/guide/)
+- Network: [Polgyon Mumbai](https://docs.polygon.technology/docs/develop/network-details/network/)
+- RPC: [Figment](https://datahub.figment.io/)
 
 ### Setup and first run instuctions for the web app
 
