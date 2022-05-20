@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import { Web3ReactProvider } from '@web3-react/core';
 import { Web3Provider } from '@ethersproject/providers';
 import { createRoot } from 'react-dom/client';
@@ -13,6 +19,11 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 root.render(
   <Web3ReactProvider getLibrary={getLibrary}>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="uploader" element={<div>uploader</div>} />
+      </Routes>
+  </BrowserRouter>
   </Web3ReactProvider>
 );

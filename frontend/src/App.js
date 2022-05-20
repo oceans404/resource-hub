@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import { WalletLinkConnector } from '@web3-react/walletlink-connector';
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector';
 import { InjectedConnector } from '@web3-react/injected-connector';
@@ -24,11 +25,14 @@ const Injected = new InjectedConnector({
 });
 
 function App() {
+  const [showWalletConnectors, setShowWalletConnectors] = useState(false);
   const { activate, deactivate, active, chainId, account } = useWeb3React();
 
   return (
     <div>
-      <button
+      <button onClick={() => !account && setShowWalletConnectors(true)}>{account || 'Connect Wallet'}</button>
+      {showWalletConnectors && (
+        <div><button
         className='font-bold underline'
         onClick={() => {
           activate(CoinbaseWallet);
@@ -51,11 +55,13 @@ function App() {
         Metamask
       </button>
 
-      <button onClick={deactivate}>Disconnect</button>
+      <button onClick={deactivate}>Disconnect</button></div>
+      )}
+      
 
-      <div>Connection Status: ${active}</div>
-      <div>Account: ${account}</div>
-      <div>Network ID: ${chainId}</div>
+      <div>Connection Status: {active}</div>
+      <div>Account: {account}</div>
+      <div>Network ID: {chainId}</div>
     </div>
   );
 }
