@@ -1,9 +1,11 @@
 ## Decentralized Resource Hub
 
-Frontend: Bootstrapped with Create-React-App
-Wallet connection mechanisms: Coinbase Wallet, Wallet Connect, and MetaMask
-Network: Polgyon Mumbai
-RPC: Figment
+### Technology used
+
+- Frontend: Bootstrapped with Create-React-App
+- Wallet connection mechanisms: Coinbase Wallet, Wallet Connect, and MetaMask
+- Network: Polgyon Mumbai
+- RPC: Figment
 
 ### Setup and first run instuctions for the web app
 
