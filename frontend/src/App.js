@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { WalletLinkConnector } from '@web3-react/walletlink-connector';
 import { WalletConnectConnector } from '@web3-react/walletconnect-connector';
@@ -26,8 +26,12 @@ const Injected = new InjectedConnector({
 });
 
 function App(props) {
-  const { children } = props;
+  const { updateAccount } = props;
   const { activate, deactivate, active, chainId, account } = useWeb3React();
+
+  useEffect(() => {
+    updateAccount(account);
+  }, [account]);
 
   const content = (
     <div>
@@ -196,8 +200,6 @@ function App(props) {
       {/* <div>Connection Status: {active ? 'connected' : 'not connected'}</div>
       <div>Account: {account}</div>
       <div>Network ID: {chainId}</div> */}
-
-      <div>{children}</div>
     </div>
   );
 }
