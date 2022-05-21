@@ -2,12 +2,19 @@
 
 ### Technology used
 
-- Frontend: Bootstrapped with Create-React-App
-- Component Library: [Flowbite](https://flowbite.com/docs/getting-started/react/)
-- CSS Framework: [Tailwind CSS](https://tailwindcss.com/)
+#### Web3 technology used
+
 - Wallet connection mechanisms: [Coinbase Wallet](https://www.coinbase.com/wallet/developers), [Wallet Connect](https://walletconnect.com/), and [MetaMask Wallet](https://docs.metamask.io/guide/)
 - Network: [Polgyon Mumbai](https://docs.polygon.technology/docs/develop/network-details/network/)
 - RPC: [Figment](https://datahub.figment.io/)
+- Decentralized file storage: [Storj](https://storj.io/) via https://demo.storj-ipfs.com/api/v0/add
+- File pinning: [IPFS](https://ipfs.io/)
+
+#### Frontend technology used
+
+- Bootstrapped with [Create-React-App](https://create-react-app.dev/)
+- Component Library: [Flowbite](https://flowbite.com/docs/getting-started/react/)
+- CSS Framework: [Tailwind CSS](https://tailwindcss.com/)
 
 ### Setup and first run instuctions for the web app
 
