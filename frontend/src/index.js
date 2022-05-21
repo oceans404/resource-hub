@@ -1,4 +1,5 @@
 import React from 'react';
+import 'flowbite';
 import {
   BrowserRouter,
   Routes,
@@ -11,6 +12,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+
 function getLibrary(provider) {
   return new Web3Provider(provider);
 }
@@ -21,8 +23,9 @@ root.render(
   <Web3ReactProvider getLibrary={getLibrary}>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="uploader" element={<div>uploader</div>} />
+        <Route path="/" element={<App>GENERAL!</App>} />
+        <Route path="uploader" element={<App>Uploader!</App>} />
+        <Route path="about" element={<App>About!</App>} />
       </Routes>
   </BrowserRouter>
   </Web3ReactProvider>
