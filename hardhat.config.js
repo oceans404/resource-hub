@@ -8,5 +8,9 @@ module.exports = {
       url: process.env.ETH_RINKEBY_URL,
       accounts: [process.env.ETH_RINKEBY_PK]
     },
+    polygon: {
+      url: process.env.POLYGON_MUMBAI_URL,
+      accounts: [process.env.POLYGON_MUMBAI_PK]
+    }
   }
 };
