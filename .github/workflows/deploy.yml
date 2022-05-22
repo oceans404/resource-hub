@@ -14,3 +14,8 @@ steps:
     run: cd frontend && npm install
   - name: Build
     run: cd frontend && npm run build
+  — name: Deploy to Skynet
+    uses: kwypchlo/deploy-to-skynet-action@main
+    with:
+      upload-dir: frontend/build
+      github-token: ${{ secrets.GITHUB_TOKEN }}
