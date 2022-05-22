@@ -29,7 +29,7 @@ function Index() {
         <App updateAccount={updateAccount} />
         <div className='container mx-auto px-2 sm:px-4 py-2.5'>
           <Routes>
-            <Route path='/' element={<div>GENERAL</div>} />
+            <Route path='/' element={<UploadPage account={account} />} />
             <Route path='uploader' element={<UploadPage account={account} />} />
             <Route path='about' element={<div>about</div>} />
           </Routes>

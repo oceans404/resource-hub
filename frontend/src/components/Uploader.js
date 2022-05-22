@@ -61,12 +61,25 @@ function UploaderComp(props) {
   };
 
   return (
-    <Dropzone
-      getUploadParams={getUploadParams}
-      onChangeStatus={handleChangeStatus}
-      onSubmit={handleSubmit}
-      submitButtonContent='Add metadata'
-    />
+    <>
+      <div className='mb-2'>
+        <h1 className='text-lg font-semibold'>Bulk upload files</h1>
+        <p>
+          Files added will be uploaded to{' '}
+          <a href='https://storj.io/' target='_blank' className='text-blue-700'>
+            Storj
+          </a>{' '}
+          (secure, decentralized, file storage) and pinned on IPFS.
+        </p>
+      </div>
+
+      <Dropzone
+        getUploadParams={getUploadParams}
+        onChangeStatus={handleChangeStatus}
+        onSubmit={handleSubmit}
+        submitButtonContent='Add metadata'
+      />
+    </>
   );
 }
 

@@ -41,3 +41,11 @@
 button:hover {
   cursor: pointer;
 }
+
+.dzu-dropzone {
+  min-height: 75vh !important;
+}
+
+.dzu-previewImage {
+  max-height: 100px !important;
+}
