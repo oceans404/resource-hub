@@ -59,7 +59,7 @@ function UploadPage(props) {
 
           <div className='my-5'>
             <h1 className='text-lg font-semibold mb-5'>
-              Add up to 3 tags for your files to be indexed by The Graph
+              Add a tag so your files can be indexed by The Graph
             </h1>
             <BasicForm submitUserTags={submitUserTags} canSubmit={!!account} />
           </div>

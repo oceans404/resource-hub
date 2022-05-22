@@ -63,13 +63,13 @@ function App(props) {
     account && `${account.slice(0, 5)}...${account.slice(38)}`;
   return (
     <div>
-      <nav className='bg-white border-gray-200 px-2 sm:px-4 py-2.5 border-b-2 border-b-[black] dark:bg-gray-800'>
+      <nav className='bg-white border-gray-200 px-2 px-4 py-2.5 border-b-2 border-b-[black] dark:bg-gray-800'>
         <div className='container flex flex-wrap justify-between items-center mx-auto'>
           <Link to='/'>
             <div className='flex items-center'>
               {/* <img src="/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Sphere Logo" /> */}
               <span className='self-center text-xl font-semibold whitespace-nowrap dark:text-white'>
-                Sphere
+                🌐 Sphere
               </span>
             </div>
           </Link>
@@ -172,11 +172,14 @@ function App(props) {
                 </Link>
               </li>
               <li>
-                <Link to='/about'>
+                <a
+                  href='https://github.com/oceans404/resource-hub#readme'
+                  target='_blank'
+                >
                   <div className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700'>
                     About
                   </div>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
