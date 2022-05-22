@@ -8,7 +8,7 @@ const rpcUrl = `https://${rpcNetwork}.datahub.figment.io/apikey/${process.env.RE
 export const CoinbaseWallet = new WalletLinkConnector({
   url: rpcUrl,
   appName: 'Sphere',
-  supportedChainIds: [1, 3, 4, 5, 42, 56, 137],
+  supportedChainIds: [1, 3, 4, 5, 42, 56, 137, 80001],
 });
 
 export const WalletConnect = new WalletConnectConnector({
@@ -18,5 +18,5 @@ export const WalletConnect = new WalletConnectConnector({
 });
 
 export const Injected = new InjectedConnector({
-  supportedChainIds: [1, 3, 4, 5, 42, 56, 137],
+  supportedChainIds: [1, 3, 4, 5, 42, 56, 137, 80001],
 });
