@@ -13,16 +13,16 @@ Sphere is a decentralized resource hub for uploading files to decentralized, tam
 - File pinning: [IPFS](https://ipfs.io/)
 - Web3 dapp Hosting: [Skynet](https://siasky.net/) -- https://10031i7adai4r2drn0le4bs5tabvog8qh057f30crpioi09d6bd92pg.siasky.net/
 
-#### Deployed smart contracts
-
-- [Ethereum](https://rinkeby.etherscan.io/address/0xebc499c6558C5B843292C208654D25dD1B4C0af5)
-- [Polygon](https://mumbai.polygonscan.com/address/0xe92e2c072c0e9a7be958643ac5171fdda9cb7b3e)
-
 #### Frontend technology used
 
 - Bootstrapped with [Create-React-App](https://create-react-app.dev/)
 - Component Library: [Flowbite](https://flowbite.com/docs/getting-started/react/)
 - CSS Framework: [Tailwind CSS](https://tailwindcss.com/)
+
+#### Deployed smart contracts
+
+- [Polygon Mumbai](https://mumbai.polygonscan.com/address/0xe92e2c072c0e9a7be958643ac5171fdda9cb7b3e)
+- [Ethereum Rinkeby](https://rinkeby.etherscan.io/address/0xebc499c6558C5B843292C208654D25dD1B4C0af5)
 
 ### Setup and first run instuctions for the web app
 

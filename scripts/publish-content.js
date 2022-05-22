@@ -1,6 +1,7 @@
 // Update with contract address after running deploy.js
 const ETH_CONTRACT_ADDRESS = "0xebc499c6558C5B843292C208654D25dD1B4C0af5";
-const POL_CONTRACT_ADDRESS = "0xe92E2C072C0E9A7Be958643AC5171fddA9CB7b3E"
+const POL_CONTRACT_ADDRESS = "0xe92E2C072C0E9A7Be958643AC5171fddA9CB7b3E";
+const GNO_CONTRACT_ADDRESS = "0xe92E2C072C0E9A7Be958643AC5171fddA9CB7b3E";
 
 class Metadata {
     constructor(_label, _title, _link) {
@@ -32,6 +33,19 @@ async function publishToEthSmartContract(metadata) {
 async function publishToPolSmartContract(metadata) {
     console.log(POL_CONTRACT_ADDRESS);
     const Content = await hre.ethers.getContractAt("Content", POL_CONTRACT_ADDRESS);
+    const content = await Content;
+
+    let response = await content.publish(metadata.label, metadata.title, metadata.link);
+
+    await response.wait();
+
+    let metadataResponse = await content.metadata();
+    console.log(metadataResponse);
+}
+
+async function publishToGnosisSmartContract(metadata) {
+    console.log(GNO_CONTRACT_ADDRESS);
+    const Content = await hre.ethers.getContractAt("Content", GNO_CONTRACT_ADDRESS);
     const content = await Content;
 
     let response = await content.publish(metadata.label, metadata.title, metadata.link);
@@ -80,9 +94,18 @@ let output = publishToEthSmartContract(label, title, link)
     process.exit(1);
   });
 */
-
+/*
 // Publishing to polygon:
 let output = publishToPolSmartContract(label, title, link)
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+*/
+
+// Publishing to gnosis:
+let output = publishToGnosisSmartContract(label, title, link)
   .then(() => process.exit(0))
   .catch((error) => {
     console.error(error);
