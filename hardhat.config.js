@@ -6,11 +6,11 @@ module.exports = {
   networks: {
     ethereum: {
       url: process.env.ETH_RINKEBY_URL,
-      accounts: [process.env.ETH_RINKEBY_PK]
+      accounts: [process.env.PRIVATE_KEY]
     },
     polygon: {
       url: process.env.POLYGON_MUMBAI_URL,
-      accounts: [process.env.POLYGON_MUMBAI_PK]
+      accounts: [process.env.PRIVATE_KEY]
     }
   }
 };
