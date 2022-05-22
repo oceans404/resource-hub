@@ -1,5 +1,7 @@
-// npx hardhat run scripts/deploy.js --network ethereum
-
+/*
+Command to deploy this contract:
+npx hardhat run scripts/deploy.js --network ethereum
+*/
 async function main() {
     const Content = await ethers.getContractFactory("Content");
  

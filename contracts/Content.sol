@@ -1,17 +1,5 @@
 pragma solidity ^0.8.0;
 
-/*
-Needed fields:
-- Array of labels
-- Owner's address
-- Title of the file
-- IPFS link
-
-Need to find a way to support batching. Accept a list of IPFS links
-and titles?
-
-Verify that the batching is done on the JS level, not here
-*/
 contract Content {
     Metadata public metadata;
 
