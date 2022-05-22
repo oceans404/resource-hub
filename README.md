@@ -14,8 +14,8 @@ Sphere is a decentralized resource hub for uploading files to decentralized, tam
 
 #### Deployed smart contracts
 
-- Ethereum: https://rinkeby.etherscan.io/address/0xebc499c6558C5B843292C208654D25dD1B4C0af5
-- Polygon: https://mumbai.polygonscan.com/address/0xe92e2c072c0e9a7be958643ac5171fdda9cb7b3e
+- [Ethereum](https://rinkeby.etherscan.io/address/0xebc499c6558C5B843292C208654D25dD1B4C0af5)
+- [Polygon](https://mumbai.polygonscan.com/address/0xe92e2c072c0e9a7be958643ac5171fdda9cb7b3e)
 
 #### Frontend technology used
 
