@@ -80,6 +80,8 @@ let output = publishToEthSmartContract(label, title, link)
     process.exit(1);
   });
 */
+
+// Publishing to polygon:
 let output = publishToPolSmartContract(label, title, link)
   .then(() => process.exit(0))
   .catch((error) => {

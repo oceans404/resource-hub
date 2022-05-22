@@ -7,10 +7,15 @@ Sphere is a decentralized resource hub for uploading files to decentralized, tam
 #### Web3 technology used
 
 - Wallet connection mechanisms: [Coinbase Wallet](https://www.coinbase.com/wallet/developers), [Wallet Connect](https://walletconnect.com/), and [MetaMask Wallet](https://docs.metamask.io/guide/)
-- Network: [Polgyon Mumbai](https://docs.polygon.technology/docs/develop/network-details/network/)
+- Networks: [Polgyon Mumbai](https://docs.polygon.technology/docs/develop/network-details/network/) and [Ethereum Rinkeby](https://ethereum.org/en/developers/docs/networks/)
 - RPC: [Figment](https://datahub.figment.io/)
 - Decentralized file storage: [Storj](https://storj.io/) via https://demo.storj-ipfs.com/api/v0/add
 - File pinning: [IPFS](https://ipfs.io/)
+
+#### Deployed smart contracts
+
+- Ethereum: https://rinkeby.etherscan.io/address/0xebc499c6558C5B843292C208654D25dD1B4C0af5
+- Polygon: https://mumbai.polygonscan.com/address/0xe92e2c072c0e9a7be958643ac5171fdda9cb7b3e
 
 #### Frontend technology used
 

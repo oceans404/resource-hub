@@ -11,6 +11,10 @@ module.exports = {
     polygon: {
       url: process.env.POLYGON_MUMBAI_URL,
       accounts: [process.env.PRIVATE_KEY]
+    },
+    gnosis: {
+      url: process.env.GNOSIS_SOKOL_URL,
+      accounts: [process.env.PRIVATE_KEY]
     }
   }
 };
