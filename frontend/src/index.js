@@ -31,6 +31,7 @@ function Index() {
           <Routes>
             <Route path='/' element={<UploadPage account={account} />} />
             <Route path='uploader' element={<UploadPage account={account} />} />
+            <Route path='search' element={<div>search</div>} />
             <Route path='about' element={<div>about</div>} />
           </Routes>
         </div>
