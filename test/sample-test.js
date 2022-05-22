@@ -1,19 +1,22 @@
+// npx hardhat run scripts/publish-content.js --network ethereum
+
 const { expect } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("Greeter", function () {
-  it("Should return the new greeting once it's changed", async function () {
-    const Greeter = await ethers.getContractFactory("Greeter");
-    const greeter = await Greeter.deploy("Hello, world!");
-    await greeter.deployed();
+describe("Content", function () {
+  it("Should publish content when publishContent is invoked", async function () {
+    const Content = await ethers.getContractFactory("Content");
+    const content = await Content.deploy();
+    await content.deployed();
 
-    expect(await greeter.greet()).to.equal("Hello, world!");
+    let label = "ETHAmsterdam";
+    let title = "4-25-22";
+    let link = "google.com";
+    let response = await content.publish(label, title, link);
 
-    const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
+    await response.wait();
 
-    // wait until the transaction is mined
-    await setGreetingTx.wait();
-
-    expect(await greeter.greet()).to.equal("Hola, mundo!");
+    let metadata = await content.metadata();
+    console.log(metadata);
   });
 });

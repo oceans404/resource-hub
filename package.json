@@ -4,7 +4,7 @@
   "description": "### Technology used",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha spec"
   },
   "repository": {
     "type": "git",
@@ -18,14 +18,17 @@
   },
   "homepage": "https://github.com/oceans404/resource-hub#readme",
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "ethers": "^5.6.7",
     "hardhat": "^2.9.6"
   },
   "dependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.6",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "chai": "^4.3.6",
     "dotenv": "^16.0.1",
-    "ethereum-waffle": "^3.4.4",
-    "ethers": "^5.6.7"
+    "ethereum-waffle": "^3.4.4"
+  },
+  "directories": {
+    "test": "test"
   }
 }
