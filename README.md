@@ -11,6 +11,7 @@ Sphere is a decentralized resource hub for uploading files to decentralized, tam
 - RPC: [Figment](https://datahub.figment.io/)
 - Decentralized file storage: [Storj](https://storj.io/) via https://demo.storj-ipfs.com/api/v0/add
 - File pinning: [IPFS](https://ipfs.io/)
+- Web3 dapp Hosting: [Skynet](https://siasky.net/) -- https://10031i7adai4r2drn0le4bs5tabvog8qh057f30crpioi09d6bd92pg.siasky.net/
 
 #### Deployed smart contracts
 

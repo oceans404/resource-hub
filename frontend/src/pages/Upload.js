@@ -51,7 +51,7 @@ function UploadPage(props) {
         method: 'eth_sendTransaction',
         params: [transactionParameters],
       });
-      console.log(`https://mumbai.polygonscan.com/tx/${txHash}`);
+      alert(`https://mumbai.polygonscan.com/tx/${txHash}`);
       return {
         success: true,
         status:
