@@ -1,4 +1,6 @@
-## Decentralized Resource Hub
+## Sphere
+
+Sphere is a decentralized resource hub for uploading files to decentralized, tamper and censorship resistant storage (Storj pinned on IPFS). Data is a public good, and resources should be available for long term public utility. Tag your files to easily find them when you need them.
 
 ### Technology used
 
